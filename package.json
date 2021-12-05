@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon index.js"
   },
-  "author": "Sarvesh Kumar",
+  "author": "Rishabh Johar",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",

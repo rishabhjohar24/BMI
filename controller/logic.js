@@ -1,6 +1,6 @@
 let DB = require("../model/db");
 const count = require("../model/CategoryCount");
-const calculate = require("../middleware/calculate");
+const calculate = require("../helper/calculate");
 const INITIAL_CHUNK = [
   { gender: "Male", height: 171, weight: 96 },
   { gender: "Male", height: 161, weight: 85 },
