@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add</title>
+    <style>
+      input {
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Calculate BMI!</div>
+    <form method="post" action="/add">
+      <div>
+        <label for="weight">Weight</label>
+        <input type="number" name="weight" id="weight" autocomplete="off" />
+      </div>
+      <div>
+        <label for="height">Height (CMs)</label>
+        <input type="number" name="height" id="height" autocomplete="off" />
+      </div>
+      <div>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+      <div style="margin-top: 3px">
+        <button type="submit">Calculate</button>
+      </div>
+    </form>
+  </body>
+</html>

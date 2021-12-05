@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid white;
+        border-collapse: collapse;
+        padding: 0.5em;
+        border-radius: 0.4em;
+        margin: 3px;
+        font-size: 1.3em;
+      }
+      button,
+      a {
+        background-color: cornflowerblue;
+        margin: 5px;
+      }
+      th,
+      td {
+        background-color: #96d4d4;
+      }
+    </style>
+    <title>Data</title>
+  </head>
+  <body>
+    <div align="center">
+      <table>
+        <tr>
+          <th>BMI Category</th>
+          <th>Challenge</th>
+          <th>Health Risk</th>
+        </tr>
+        <% for(let entity of entities) { %>
+        <tr>
+          <td><%= entity.BMI_Category %></td>
+          <td><%= entity.BMI %></td>
+          <td><%= entity.Health_Risk %></td>
+        </tr>
+        <% } %>
+      </table>
+      <button><a href="/add">Calculate</a></button>
+    </div>
+    <div align="center">
+      <table>
+        <tr>
+          <% for(i in count) { %>
+          <th><%= i %></th>
+          <% } %>
+        </tr>
+        <tr>
+          <td><%= count.Underweight %></td>
+          <td><%= count.Normal_Weight %></td>
+          <td><%= count.Overweight %></td>
+          <td><%= count.Moderately_Obese %></td>
+          <td><%= count.Severely_Obese %></td>
+          <td><%= count.Very_Severely_Obese %></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
